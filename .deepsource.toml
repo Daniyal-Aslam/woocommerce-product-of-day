@@ -1,1 +1,26 @@
 version = 1
+
+# PHP Analyzer
+[[analyzers]]
+name = "php"
+enabled = true
+php_version = "8.1"  # Specify the PHP version you're using
+
+  [analyzers.meta]
+  dependency_manager = "composer"  # If you're using Composer for dependency management
+
+# JavaScript/React Analyzer
+[[analyzers]]
+name = "javascript"
+enabled = true
+node_version = "16"  # Specify your Node.js version, if applicable
+
+# CSS Analyzer
+[[analyzers]]
+name = "css"
+enabled = true
+
+# Security Analyzer
+[[analyzers]]
+name = "security"
+enabled = true
